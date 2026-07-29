@@ -19,7 +19,7 @@ export const profile = {
   status: "Open to jobs & internships",
 
   bio: [
-    "I'm a B.Tech Computer Science student at Mohan Babu University, Tirupati, currently in my third year. Most of what I know came from building — picking a problem that annoyed me, then shipping something that fixed it.",
+    "I'm a B.Tech Computer Science student at Mohan Babu University, Tirupati, now in my final year. Most of what I know came from building — picking a problem that annoyed me, then shipping something that fixed it.",
     "My main project, MConnects, is a smart transportation platform for students: real-time auto-booking and tracking, a React frontend, Node.js APIs behind it. It placed in the Top 20 of 100+ teams at our university hackathon and it's live today.",
     "Alongside that I keep a steady habit of DSA and debugging practice, because the fundamentals are what make the rest go faster. Outside the editor you'll find me reading, volunteering, or on a badminton court.",
   ],
