@@ -1,0 +1,15 @@
+node_modules
+dist
+dist-ssr
+*.local
+.DS_Store
+.vite
+
+# Vendored third-party design skill (2.5 MB). Reinstall with:
+#   npm i -g ui-ux-pro-max-cli && uipro init --ai claude
+.claude
+
+# Editor
+.vscode/*
+!.vscode/extensions.json
+.idea
