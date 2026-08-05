@@ -1,6 +1,7 @@
 import { motion, useReducedMotion } from "motion/react";
 import Reveal from "./Reveal";
 import LivePreview from "./LivePreview";
+import FeaturePanel from "./FeaturePanel";
 import SectionHeading from "./SectionHeading";
 import { projects } from "../data";
 import { ArrowUpRight, Check } from "./icons";
@@ -27,7 +28,7 @@ function ProjectCard({ project, index }) {
             <h3 className="font-display text-2xl font-bold tracking-tight text-white sm:text-3xl">
               {project.title}
             </h3>
-            {project.featured && (
+            {project.href && (
               <span className="inline-flex items-center gap-1.5 rounded-full border border-emerald-400/25 bg-emerald-400/10 px-2.5 py-1 text-[10px] font-semibold uppercase tracking-wider text-emerald-300">
                 <span className="h-1.5 w-1.5 rounded-full bg-emerald-400" />
                 Live
@@ -48,7 +49,9 @@ function ProjectCard({ project, index }) {
             {project.blurb}
           </p>
 
-          {project.highlights?.length > 0 && (
+          {/* Skipped when there's no live preview — FeaturePanel already
+              lists these on the right, and showing them twice reads as a bug. */}
+          {hasPreview && project.highlights?.length > 0 && (
             <ul className="mt-6 space-y-2.5">
               {project.highlights.map((h) => (
                 <li key={h} className="flex items-start gap-2.5 text-sm text-zinc-400">
@@ -95,11 +98,20 @@ function ProjectCard({ project, index }) {
           </div>
         </div>
 
-        {hasPreview && (
-          <div className="relative">
-            <LivePreview url={project.preview} label={`${project.title} — live preview`} />
-          </div>
-        )}
+        <div className="relative">
+          {hasPreview ? (
+            <LivePreview
+              url={project.preview}
+              label={`${project.title} — live preview`}
+            />
+          ) : (
+            <FeaturePanel
+              url={project.href}
+              features={project.highlights}
+              note={project.gated}
+            />
+          )}
+        </div>
       </motion.article>
     </Reveal>
   );
@@ -112,7 +124,7 @@ export default function Projects() {
         <SectionHeading
           eyebrow="Selected work"
           title="Things I've shipped"
-          intro="One project I care about more than a long list of half-finished ones."
+          intro="Two products I built end to end and shipped — both live, both solving a problem I actually had."
         />
 
         <div className="mt-14 space-y-8">

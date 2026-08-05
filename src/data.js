@@ -75,6 +75,27 @@ export const projects = [
     ],
     tags: ["React", "Node.js", "REST APIs", "MySQL"],
   },
+  {
+    title: "CareerPilot AI",
+    subtitle: "AI job application copilot",
+    year: "2026",
+    featured: true,
+    // Auth-gated: the landing page is a sign-in wall, so a live embed would
+    // show only a login form. Rendered as a feature panel instead.
+    preview: null,
+    gated: "Sign-in required — visit the site to try it",
+    href: "https://careerpilot-ai-cyan.vercel.app",
+    repo: null,
+    blurb:
+      "A copilot for the job hunt. It scores a resume the way an applicant tracking system would, keeps every version in one place, and tracks each application from wishlist to offer — so the search stays organised instead of living in a spreadsheet.",
+    highlights: [
+      "Instant ATS score and resume feedback",
+      "Version management across tailored resumes",
+      "Application pipeline from wishlist to offer",
+      "Google and email sign-in",
+    ],
+    tags: ["Next.js", "React", "AI", "Vercel"],
+  },
 ];
 
 export const credentials = {
