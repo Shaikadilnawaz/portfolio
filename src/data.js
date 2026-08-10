@@ -132,15 +132,14 @@ export const credentials = {
     {
       title: "Oracle Cloud Infrastructure 2025 Certified AI Foundations Associate",
       org: "Oracle",
-      period: "2025",
+      period: "Dec 2025",
       note: null,
       href: "https://catalog-education.oracle.com/pls/certview/sharebadge?id=4D662D893F7C191FD03577B27C9429DB85FAA6A6D9DD8D887352C3D71E394914",
     },
     {
       title: "Oracle Fusion Cloud ERP Process Essentials Certified — Rel 1",
       org: "Oracle",
-      // TODO: add the issue date if you have it
-      period: null,
+      period: "Mar 2025",
       note: null,
       href: "https://catalog-education.oracle.com/pls/certview/sharebadge?id=654D30B187B271CEFC3A6B9456AC89FEA09E31BF09A5F3DBEB1345AB044AC263",
     },
