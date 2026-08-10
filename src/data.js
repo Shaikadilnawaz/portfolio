@@ -34,7 +34,7 @@ export const profile = {
 
 export const stats = [
   { value: "Top 20", label: "of 100+ teams, university hackathon" },
-  { value: "2", label: "Oracle Cloud certifications" },
+  { value: "5", label: "AWS & Oracle Cloud certifications" },
   { value: "2027", label: "B.Tech CSE, expected" },
 ];
 
@@ -42,6 +42,7 @@ export const skills = [
   { group: "Languages", items: ["Python", "Java", "C / C++", "JavaScript"] },
   { group: "Frontend", items: ["React.js", "HTML", "CSS", "Tailwind"] },
   { group: "Backend & Data", items: ["Node.js", "REST APIs", "MySQL"] },
+  { group: "Cloud", items: ["AWS", "Oracle Cloud (OCI)"] },
   { group: "Tools", items: ["Git", "GitHub", "VS Code", "Vercel"] },
   {
     group: "Concepts",
@@ -119,18 +120,43 @@ export const credentials = {
       note: "99%",
     },
   ],
+  // Newest first. `href` renders a "Verify" link on the card.
   certifications: [
+    {
+      title: "AWS Certified Cloud Practitioner (CLF-C02)",
+      org: "Amazon Web Services",
+      period: "Aug 2026 — Aug 2029",
+      note: null,
+      href: "https://www.credly.com/badges/bafd37ef-2139-4c98-953f-06248382d95a/public_url",
+    },
+    {
+      title: "Oracle Cloud Infrastructure 2025 Certified AI Foundations Associate",
+      org: "Oracle",
+      period: "2025",
+      note: null,
+      href: "https://catalog-education.oracle.com/pls/certview/sharebadge?id=4D662D893F7C191FD03577B27C9429DB85FAA6A6D9DD8D887352C3D71E394914",
+    },
+    {
+      title: "Oracle Fusion Cloud ERP Process Essentials Certified — Rel 1",
+      org: "Oracle",
+      // TODO: add the issue date if you have it
+      period: null,
+      note: null,
+      href: "https://catalog-education.oracle.com/pls/certview/sharebadge?id=654D30B187B271CEFC3A6B9456AC89FEA09E31BF09A5F3DBEB1345AB044AC263",
+    },
     {
       title: "Oracle Fusion Cloud Applications ERP Foundations Associate",
       org: "Oracle",
       period: "March 2025",
       note: null,
+      href: null,
     },
     {
       title: "Oracle Fusion Cloud Applications HCM Certified Foundations Associate",
       org: "Oracle",
       period: "March 2025",
       note: null,
+      href: null,
     },
   ],
 };

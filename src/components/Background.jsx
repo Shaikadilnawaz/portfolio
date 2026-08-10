@@ -1,7 +1,7 @@
 import Reveal from "./Reveal";
 import SectionHeading from "./SectionHeading";
 import { credentials, languages, interests } from "../data";
-import { GraduationCap, Award } from "./icons";
+import { GraduationCap, Award, ArrowUpRight } from "./icons";
 
 function Timeline({ icon: Icon, heading, items }) {
   return (
@@ -37,6 +37,18 @@ function Timeline({ icon: Icon, heading, items }) {
                   </span>
                 )}
               </p>
+
+              {item.href && (
+                <a
+                  href={item.href}
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  className="mt-2 inline-flex cursor-pointer items-center gap-1 text-xs font-medium text-accent transition-colors duration-200 hover:text-white"
+                >
+                  Verify credential
+                  <ArrowUpRight size={12} />
+                </a>
+              )}
             </li>
           </Reveal>
         ))}
