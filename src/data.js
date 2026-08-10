@@ -34,7 +34,7 @@ export const profile = {
 
 export const stats = [
   { value: "Top 20", label: "of 100+ teams, university hackathon" },
-  { value: "5", label: "AWS & Oracle Cloud certifications" },
+  { value: "3", label: "AWS & Oracle Cloud certifications" },
   { value: "2027", label: "B.Tech CSE, expected" },
 ];
 
@@ -143,20 +143,6 @@ export const credentials = {
       period: null,
       note: null,
       href: "https://catalog-education.oracle.com/pls/certview/sharebadge?id=654D30B187B271CEFC3A6B9456AC89FEA09E31BF09A5F3DBEB1345AB044AC263",
-    },
-    {
-      title: "Oracle Fusion Cloud Applications ERP Foundations Associate",
-      org: "Oracle",
-      period: "March 2025",
-      note: null,
-      href: null,
-    },
-    {
-      title: "Oracle Fusion Cloud Applications HCM Certified Foundations Associate",
-      org: "Oracle",
-      period: "March 2025",
-      note: null,
-      href: null,
     },
   ],
 };
